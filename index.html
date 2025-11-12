@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert: You've Been Phished | PhishGuard</title>
+    <style>
+        :root {
+            --primary-blue: #1976d2;
+            --dark-blue: #0d47a1;
+            --light-blue: #e3f2fd;
+            --accent-blue: #2196f3;
+            --white: #ffffff;
+            --dark-gray: #333333;
+            --medium-gray: #666666;
+            --light-gray: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        
+        .alert-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .alert-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .alert-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .alert-header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .warning-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-content {
+            padding: 30px;
+        }
+        
+        .alert-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .alert-section:last-child {
+            border-bottom: none;
+        }
+        
+        .alert-section h2 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .alert-section p {
+            margin-bottom: 15px;
+        }
+        
+        .action-list {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        
+        .action-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .action-list li:before {
+            content: "🔍";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .urgency-highlight {
+            background-color: var(--light-blue);
+            border-left: 4px solid var(--primary-blue);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary-blue), var(--accent-blue));
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button:hover {
+            background: linear-gradient(to right, var(--dark-blue), var(--primary-blue));
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--light-gray);
+            color: var(--medium-gray);
+            font-size: 14px;
+        }
+        
+        .phishguard-logo {
+            font-weight: bold;
+            color: var(--primary-blue);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .alert-container {
+                margin: 20px;
+            }
+            
+            .alert-header h1 {
+                font-size: 26px;
+            }
+            
+            .alert-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-container">
+        <div class="alert-header">
+            <div class="warning-icon">⚠️</div>
+            <h1>SECURITY ALERT: You've Been Phished</h1>
+            <p>This is a simulated phishing exercise by PhishGuard</p>
+        </div>
+        
+        <div class="alert-content">
+            <div class="alert-section">
+                <h2>What Just Happened?</h2>
+                <p>You just interacted with a simulated phishing email as part of a security awareness exercise. In a real attack, this could have compromised your personal information, financial data, or company systems.</p>
+                
+                <div class="urgency-highlight">
+                    <p><strong>IMPORTANT:</strong> This was only a test, but it demonstrates a vulnerability that real attackers could exploit.</p>
+                </div>
+            </div>
+            
+            <div class="alert-section">
+                <h2>Immediate Actions You Should Take</h2>
+                <ul class="action-list">
+                    <li>If you entered any credentials, change those passwords immediately</li>
+                    <li>Enable multi-factor authentication on all important accounts</li>
+                    <li>Report suspicious emails to your IT security team</li>
+                    <li>Be extra vigilant for follow-up phishing attempts</li>
+                </ul>
+            </div>
+            
+            <div class="alert-section">
+                <h2>How to Spot Phishing Attempts</h2>
+                <p>Phishing emails often contain these red flags:</p>
+                <ul class="action-list">
+                    <li>Urgent or threatening language demanding immediate action</li>
+                    <li>Suspicious sender addresses that don't match the claimed organization</li>
+                    <li>Generic greetings instead of your name</li>
+                    <li>Links that don't match the displayed text when you hover over them</li>
+                    <li>Requests for sensitive information like passwords or credit card details</li>
+                    <li>Poor grammar, spelling mistakes, or unusual formatting</li>
+                </ul>
+            </div>
+            
+            <div class="alert-section">
+                <h2>What is PhishGuard?</h2>
+                <p>PhishGuard is a security awareness platform that helps organizations train employees to recognize and avoid phishing attacks. By simulating real-world phishing scenarios, we help build your cyber defense skills.</p>
+                <p>This exercise was designed to create awareness without causing actual harm. Your participation helps strengthen our collective security posture.</p>
+                
+                <a href="#" class="button">Learn More About PhishGuard</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="phishguard-logo">PhishGuard</div>
+            <p>This is a security awareness exercise conducted by PhishGuard. No actual harm has occurred to your systems or data.</p>
+            <p>If you have questions, please contact your organization's IT security team.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple animation for the warning icon
+        document.addEventListener('DOMContentLoaded', function() {
+            const warningIcon = document.querySelector('.warning-icon');
+            
+            // Add pulsing animation to the warning icon
+            warningIcon.style.animation = 'pulse 2s infinite';
+            
+            // Create style for animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.1); }
+                    100% { transform: scale(1); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
